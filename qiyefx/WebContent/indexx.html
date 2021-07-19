@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+
+		<title></title>
+	</head>
+	
+		<body background="pics/c.JPG" style="background-size: 50%;">
+			<div class="panel" style="width: 400px;margin-top: 250px;margin-left: 500px;">
+				<div style="margin-left: 220px;">
+					<img src="pics/logo.png" width="50px"height="50px">
+				</div>
+				<div class="row py-5">
+				<form action="securityMgr" method="post" >
+				<div class="row mb-16" style="margin-top: 20px;">
+					<label for="filmusers" class="col-sm-3 col-form-label"><svg xmlns="http://www.w3.org/2000/svg"
+							width="16" height="16" fill="currentColor" class="bi bi-emoji-laughing" viewBox="0 0 16 16">
+							<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+							<path
+								d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zM7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z" />
+						</svg>账号</label>
+					<div class="col-sm-9">
+						<input type="text" name="filmusers" class="form-control" id="colFormLabel" placeholder="请输入账号">
+					</div>
+				</div>
+				<div class="row mb-16" style="margin-top: 10px;">
+					<label for="filmpassword" class="col-sm-3 col-form-label"><svg xmlns="http://www.w3.org/2000/svg"
+							width="16" height="16" fill="currentColor" class="bi bi-chat-left-dots" viewBox="0 0 16 16">
+							<path
+								d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+							<path
+								d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+						</svg>密码</label>
+					<div class="col-sm-9">
+						<input type="password" name="filmpassword" class="form-control" id="colFormLabel" placeholder="请输入密码">
+					</div>
+				</div>
+				<c:if test="${not empty errMsg}">
+                 <div class="alert alert-danger text-center">
+			      ${errMsg}
+		        </div>		
+		        </c:if>
+
+				<div  class="with-padding" style="margin-top: 10px;margin-left: 130px;">
+				
+					<button class="btn btn-block  btn-info" type="button">登录</button>
+				
+				</div>
+
+				<div  class="with-padding" style="margin-top: -38px;margin-left: 320px;">
+					<a href="zhuc.html">
+					<button class="btn btn-block  btn-danger" type="button" >注册</button>
+					</a>
+				</div>
+				
+			</div>
+			
+		<div  class="with-padding" style="margin-top: -38px;margin-left: 700px;">
+					<a href="#">
+					<button class="btn btn-block  btn-info" type="button" >管理员登录</button>
+					</a>
+				</div>
+				
+				</form>
+				</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+		</script>
+		<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<!-- 包括所有已编译的插件 -->
+		<script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+		<title></title>
+	</head>
+	<body background="pics/c.JPG" style="background-size: 100%;">
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+                <img src="pics/logo.png" width="20px" height="20px">
+
+					<a class="navbar-brand" href="#">购物系统</a>
+				</div>
+				<div>
+					<ul class="nav navbar-nav">
+						<li class="active"><a href='deviceMgr?task=loadDevice'>商品管理</a></li>
+						<li><a href='input_repair.jsp'>报修管理</a></li>
+						<li><a href='input_buy.jsp'>用户管理</a></li>
+					</ul>
+				</div>
+				<div style="margin-left: 1400px;">
+					<ul class="nav navbar-nav">
+						
+						<li><a href="index.jsp">退出登录</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+<div class="container" style="margin-top: 200px;margin-left: 440px;width:600px;">
+      <span class="input-group-addon" style="height: 200px;">
+      <p>
+	  <font size="5" color="#055160">欢迎您的登录！</font></p>
+        <a href='deviceMgr?task=loadDevice' class="btn btn-info btn-lg" >
+          <span class="glyphicon glyphicon-tree-deciduous"></span> 商品管理
+        </a>
+       <a href='input_repair.jsp'class="btn btn-info btn-lg" >
+          <span class="glyphicon glyphicon-tree-conifer"></span> 报修管理
+        </a>
+      <a href='input_buy.jsp' class="btn btn-info btn-lg" >
+	          <span class="glyphicon glyphicon-cloud-upload"></span> 用户管理
+	        </a>
+			</span>
+    </div>
+
+<jsp:include page="footer.jsp"></jsp:include>
+		<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<!-- 包括所有已编译的插件 -->
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
